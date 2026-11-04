@@ -1,0 +1,29 @@
+{
+  "name": "rewear-marketplace",
+  "version": "1.0.0",
+  "description": "ReWear - Sustainable Clothing Exchange & Swap Marketplace (Unified Mentor Internship)",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"green,blue\" \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "test": "npm --prefix server test",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "clothing-exchange",
+    "sustainable-fashion",
+    "swap-marketplace",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Unified Mentor Intern",
+  "license": "ISC"
+}
